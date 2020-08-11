@@ -32,7 +32,7 @@ func MyAfterTransaction(ctx contractapi.TransactionContextInterface, iface inter
 }
 ```
 
-Notice that neither the before or after function in the example above directly receive the parameter data, this is as these functions have to be generic to all calls to the contract. The raw arguments passed in to the call can be accessed using the [stub](https://godoc.org/github.com/hyperledger/fabric-chaincode-go/shim#ChaincodeStub) via the transaction context. The interface value provided to the after function is the value returned by the named function. If we take the above example then that interface for a call to `DoSomething` would be the string `Hello World`.
+Notice that neither the before or after function in the example above directly receive the parameter data, this is as these functions have to be generic to all calls to the contract. The raw arguments passed in to the call can be accessed using the [stub](https://godoc.org/github.com/RUAN0007/fabric-chaincode-go/shim#ChaincodeStub) via the transaction context. The interface value provided to the after function is the value returned by the named function. If we take the above example then that interface for a call to `DoSomething` would be the string `Hello World`.
 
 > Note: if the named function has no defined success response or it returns the type `interface{}` as its success response and has returned nil for that interface the after transaction will receive a nil value for its interface parameter of type `contractapi.UndefinedInterface`. Comparing this value to nil will result in false unless it is typecast.
 

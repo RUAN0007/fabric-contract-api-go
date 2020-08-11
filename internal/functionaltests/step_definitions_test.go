@@ -17,7 +17,7 @@ import (
 	"github.com/cucumber/godog"
 	"github.com/cucumber/godog/colors"
 	"github.com/cucumber/godog/gherkin"
-	"github.com/hyperledger/fabric-chaincode-go/shimtest"
+	"github.com/RUAN0007/fabric-chaincode-go/shimtest"
 	"github.com/RUAN0007/fabric-contract-api-go/contractapi"
 	"github.com/RUAN0007/fabric-contract-api-go/internal/functionaltests/contracts/complexcontract"
 	"github.com/RUAN0007/fabric-contract-api-go/internal/functionaltests/contracts/extendedsimplecontract"

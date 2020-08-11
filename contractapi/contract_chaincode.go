@@ -11,8 +11,8 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/hyperledger/fabric-chaincode-go/pkg/cid"
-	"github.com/hyperledger/fabric-chaincode-go/shim"
+	"github.com/RUAN0007/fabric-chaincode-go/pkg/cid"
+	"github.com/RUAN0007/fabric-chaincode-go/shim"
 	"github.com/RUAN0007/fabric-contract-api-go/internal"
 	"github.com/RUAN0007/fabric-contract-api-go/internal/utils"
 	"github.com/RUAN0007/fabric-contract-api-go/metadata"

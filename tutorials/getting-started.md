@@ -78,7 +78,7 @@ By default all public functions of a struct are assumed to be callable via the f
     - If the function is defined to return one value then that value may be any of the allowable types listed for parameters (except `interface{}`) or `error`.
     - If the function is defined to return two values then the first may be any of the allowable types listed for parameters (except `interface{}`) and the second must be `error`
 
-The first function to write for the simple contract is `Create`. This will add a new key value pair to the world state using a key and value provided by the user. As it interacts with the world state we will need the transaction context to be passed. We will take the default transaction context provided by contractapi (`contractapi.TransactionContext`) as it provides all the necessary functions for interacting with the world state. Taking directly `contractapi.TransactionContext` does however pose some problems, what if we were to write unit tests for our contract? We would have to create an instance of that type which would then require a [stub](https://godoc.org/github.com/hyperledger/fabric-chaincode-go/shim#ChaincodeStub) instance and would end up making our tests complex. Instead what we can do is take an interface which the transaction context meets; fortunately the contractapi package defines one: `contractapi.TransactionContextInterface`. This means if we were to write unit tests we could send a mock transaction context which could then be used to track calls or just simplify our test setup. As the function is intended to write rather than return data it will only return the error type.
+The first function to write for the simple contract is `Create`. This will add a new key value pair to the world state using a key and value provided by the user. As it interacts with the world state we will need the transaction context to be passed. We will take the default transaction context provided by contractapi (`contractapi.TransactionContext`) as it provides all the necessary functions for interacting with the world state. Taking directly `contractapi.TransactionContext` does however pose some problems, what if we were to write unit tests for our contract? We would have to create an instance of that type which would then require a [stub](https://godoc.org/github.com/RUAN0007/fabric-chaincode-go/shim#ChaincodeStub) instance and would end up making our tests complex. Instead what we can do is take an interface which the transaction context meets; fortunately the contractapi package defines one: `contractapi.TransactionContextInterface`. This means if we were to write unit tests we could send a mock transaction context which could then be used to track calls or just simplify our test setup. As the function is intended to write rather than return data it will only return the error type.
 
 ```
 // Create adds a new key with value to the world state
@@ -103,7 +103,7 @@ func (sc *SimpleContract) Create(ctx contractapi.TransactionContextInterface, ke
 }
 ```
 
-The function uses the stub of the transaction context ([shim.ChaincodeStubInterface](https://godoc.org/github.com/hyperledger/fabric-chaincode-go/shim#ChaincodeStubInterface)) to first read from the world state, checking that no value exists with the supplied key, and then puts a new value into the world state, converting the passed value to a byte array as required.
+The function uses the stub of the transaction context ([shim.ChaincodeStubInterface](https://godoc.org/github.com/RUAN0007/fabric-chaincode-go/shim#ChaincodeStubInterface)) to first read from the world state, checking that no value exists with the supplied key, and then puts a new value into the world state, converting the passed value to a byte array as required.
 
 The second function to add to the contract is `Update`, this will work in the same way as the Create function however instead of erroring if the key exists in the world state, it will error if it does not.
 
@@ -238,7 +238,7 @@ func main() {
 }
 ```
 
-So far you have created a contract, fabric however uses chaincode which must meet the [shim.Chaincode](https://godoc.org/github.com/hyperledger/fabric-chaincode-go/shim#Chaincode) interface. The chaincode interface requires two functions Init and Invoke. Fortunately you do not need to write these since contractapi provides a way of generating a chaincode from one or more contracts. To create a chaincode add the following to your `main` function:
+So far you have created a contract, fabric however uses chaincode which must meet the [shim.Chaincode](https://godoc.org/github.com/RUAN0007/fabric-chaincode-go/shim#Chaincode) interface. The chaincode interface requires two functions Init and Invoke. Fortunately you do not need to write these since contractapi provides a way of generating a chaincode from one or more contracts. To create a chaincode add the following to your `main` function:
 
 ```
     simpleContract := new(SimpleContract)

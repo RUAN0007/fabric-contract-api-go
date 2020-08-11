@@ -11,8 +11,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hyperledger/fabric-chaincode-go/shim"
-	"github.com/hyperledger/fabric-chaincode-go/shimtest"
+	"github.com/RUAN0007/fabric-chaincode-go/shim"
+	"github.com/RUAN0007/fabric-chaincode-go/shimtest"
 	"github.com/RUAN0007/fabric-contract-api-go/internal"
 	"github.com/RUAN0007/fabric-contract-api-go/internal/utils"
 	"github.com/RUAN0007/fabric-contract-api-go/metadata"

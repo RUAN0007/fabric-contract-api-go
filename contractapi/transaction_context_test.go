@@ -7,7 +7,7 @@ import (
 	"crypto/x509"
 	"testing"
 
-	"github.com/hyperledger/fabric-chaincode-go/shimtest"
+	"github.com/RUAN0007/fabric-chaincode-go/shimtest"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -95,8 +95,8 @@ github.com/google/uuid v1.0.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+
 github.com/google/uuid v1.1.1/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
 github.com/gucumber/gucumber v0.0.0-20180127021336-7d5c79e832a2/go.mod h1:YbdHRK9ViqwGMS0rtRY+1I6faHvVyyurKPIPwifihxI=
 github.com/hashicorp/hcl v1.0.0/go.mod h1:E5yfLk+7swimpb2L/Alb/PJmXilQ/rhwaUYs4T20WEQ=
-github.com/hyperledger/fabric-chaincode-go v0.0.0-20191108205148-17c4b2760b56 h1:BUCrT0VEO4ryJ7DAEGccqnEJcdHydx7wIJQ0ZGFEjJM=
-github.com/hyperledger/fabric-chaincode-go v0.0.0-20191108205148-17c4b2760b56/go.mod h1:HZK6PKLWrvdD/t0oSLiyaRaUM6fZ7qjJuOlb0zrn0mo=
+github.com/RUAN0007/fabric-chaincode-go v0.0.0-20191108205148-17c4b2760b56 h1:BUCrT0VEO4ryJ7DAEGccqnEJcdHydx7wIJQ0ZGFEjJM=
+github.com/RUAN0007/fabric-chaincode-go v0.0.0-20191108205148-17c4b2760b56/go.mod h1:HZK6PKLWrvdD/t0oSLiyaRaUM6fZ7qjJuOlb0zrn0mo=
 github.com/RUAN0007/fabric-contract-api-go v0.0.0-20191118113407-4c6ff12b4f96 h1:1PaDE2QfQB/5ZnvlrYZNH62xMtKE/9cjwIzy9fjpJmg=
 github.com/RUAN0007/fabric-contract-api-go v0.0.0-20191118113407-4c6ff12b4f96/go.mod h1:SdJkyS7/oJltu5Ap//5sCEdNlvj+ZzD3TwnJOt3zf4c=
 github.com/hyperledger/fabric-protos-go v0.0.0-20190821214336-621b908d5022/go.mod h1:xVYTjK4DtZRBxZ2D9aE4y6AbLaPwue2o/criQyQbVD0=
