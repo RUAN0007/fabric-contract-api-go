@@ -45,7 +45,7 @@ func (ba *BasicAsset) SetConditionUsed() {
 }
 ```
 
-Notice that the struct properties are tagged with JSON tags. When a call is made to chaincode created using the contractapi package the transaction arguments and returned values are strings which get converted to and from their go value by a serializer. By default this serializer is a JSON serializer which is built on top of the standard JSON marshalling/unmarshalling in Go, it is also possible to use a serializer of your own definition. These tags are therefore used to tell the serializer how to convert to and from the object. In this case it says the property 'ID' is referenced in a JSON string by the property 'id'. These JSON tags are also used in the metadata to describe the object, more detail can be found in the [godoc](https://godoc.org/github.com/hyperledger/fabric-contract-api-go/metadata#GetSchema). This is as the metadata is intended to tell a user of the smart contract what they need to send in a transaction and what to expect in return.
+Notice that the struct properties are tagged with JSON tags. When a call is made to chaincode created using the contractapi package the transaction arguments and returned values are strings which get converted to and from their go value by a serializer. By default this serializer is a JSON serializer which is built on top of the standard JSON marshalling/unmarshalling in Go, it is also possible to use a serializer of your own definition. These tags are therefore used to tell the serializer how to convert to and from the object. In this case it says the property 'ID' is referenced in a JSON string by the property 'id'. These JSON tags are also used in the metadata to describe the object, more detail can be found in the [godoc](https://godoc.org/github.com/RUAN0007/fabric-contract-api-go/metadata#GetSchema). This is as the metadata is intended to tell a user of the smart contract what they need to send in a transaction and what to expect in return.
 
 > Note: as the default serializer is built on top of the standard JSON marshalling/unmarshalling in Go, it is possible to write your own handler for the marshalling by creating MarshalJSON and UnmarshalJSON functions. Beware you may need to make use of the `metadata` tag in your struct to ensure that the contract metadata matches this custom setup.
 
@@ -61,7 +61,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/hyperledger/fabric-contract-api-go/contractapi"
+	"github.com/RUAN0007/fabric-contract-api-go/contractapi"
 )
 
 // ComplexContract contract for handling BasicAssets

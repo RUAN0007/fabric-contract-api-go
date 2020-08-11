@@ -13,10 +13,10 @@ import (
 
 	"github.com/hyperledger/fabric-chaincode-go/shim"
 	"github.com/hyperledger/fabric-chaincode-go/shimtest"
-	"github.com/hyperledger/fabric-contract-api-go/internal"
-	"github.com/hyperledger/fabric-contract-api-go/internal/utils"
-	"github.com/hyperledger/fabric-contract-api-go/metadata"
-	"github.com/hyperledger/fabric-contract-api-go/serializer"
+	"github.com/RUAN0007/fabric-contract-api-go/internal"
+	"github.com/RUAN0007/fabric-contract-api-go/internal/utils"
+	"github.com/RUAN0007/fabric-contract-api-go/metadata"
+	"github.com/RUAN0007/fabric-contract-api-go/serializer"
 	"github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/stretchr/testify/assert"
 )

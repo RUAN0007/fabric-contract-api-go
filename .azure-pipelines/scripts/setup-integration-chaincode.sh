@@ -16,7 +16,7 @@ cd $CHAINCODE_DIR
 for testCC in */; do
     cd $testCC
     cat go.mod > tmp.go.mod
-    echo 'replace github.com/hyperledger/fabric-contract-api-go => ../../../..' >> go.mod
+    echo 'replace github.com/RUAN0007/fabric-contract-api-go => ../../../..' >> go.mod
     go mod vendor
     
     cat tmp.go.mod > go.mod

@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/go-openapi/spec"
-	"github.com/hyperledger/fabric-contract-api-go/internal/types"
-	"github.com/hyperledger/fabric-contract-api-go/metadata"
+	"github.com/RUAN0007/fabric-contract-api-go/internal/types"
+	"github.com/RUAN0007/fabric-contract-api-go/metadata"
 	"github.com/stretchr/testify/assert"
 	"github.com/xeipuuv/gojsonschema"
 )

@@ -8,8 +8,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/hyperledger/fabric-contract-api-go/contractapi"
-	"github.com/hyperledger/fabric-contract-api-go/internal/functionaltests/contracts/utils"
+	"github.com/RUAN0007/fabric-contract-api-go/contractapi"
+	"github.com/RUAN0007/fabric-contract-api-go/internal/functionaltests/contracts/utils"
 )
 
 // ComplexContract contract for handling the business logic of a basic object

@@ -18,12 +18,12 @@ import (
 	"github.com/cucumber/godog/colors"
 	"github.com/cucumber/godog/gherkin"
 	"github.com/hyperledger/fabric-chaincode-go/shimtest"
-	"github.com/hyperledger/fabric-contract-api-go/contractapi"
-	"github.com/hyperledger/fabric-contract-api-go/internal/functionaltests/contracts/complexcontract"
-	"github.com/hyperledger/fabric-contract-api-go/internal/functionaltests/contracts/extendedsimplecontract"
-	"github.com/hyperledger/fabric-contract-api-go/internal/functionaltests/contracts/simplecontract"
-	"github.com/hyperledger/fabric-contract-api-go/internal/functionaltests/contracts/utils"
-	"github.com/hyperledger/fabric-contract-api-go/metadata"
+	"github.com/RUAN0007/fabric-contract-api-go/contractapi"
+	"github.com/RUAN0007/fabric-contract-api-go/internal/functionaltests/contracts/complexcontract"
+	"github.com/RUAN0007/fabric-contract-api-go/internal/functionaltests/contracts/extendedsimplecontract"
+	"github.com/RUAN0007/fabric-contract-api-go/internal/functionaltests/contracts/simplecontract"
+	"github.com/RUAN0007/fabric-contract-api-go/internal/functionaltests/contracts/utils"
+	"github.com/RUAN0007/fabric-contract-api-go/metadata"
 	"github.com/hyperledger/fabric-protos-go/peer"
 )
 

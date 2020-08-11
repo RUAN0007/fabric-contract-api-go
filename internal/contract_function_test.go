@@ -10,8 +10,8 @@ import (
 	"testing"
 
 	"github.com/go-openapi/spec"
-	metadata "github.com/hyperledger/fabric-contract-api-go/metadata"
-	"github.com/hyperledger/fabric-contract-api-go/serializer"
+	metadata "github.com/RUAN0007/fabric-contract-api-go/metadata"
+	"github.com/RUAN0007/fabric-contract-api-go/serializer"
 	"github.com/stretchr/testify/assert"
 	"github.com/xeipuuv/gojsonschema"
 )

@@ -7,8 +7,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/hyperledger/fabric-contract-api-go/contractapi"
-	"github.com/hyperledger/fabric-contract-api-go/internal/functionaltests/contracts/utils"
+	"github.com/RUAN0007/fabric-contract-api-go/contractapi"
+	"github.com/RUAN0007/fabric-contract-api-go/internal/functionaltests/contracts/utils"
 )
 
 // ExtendedSimpleContract contract for handling writing and reading from the world state

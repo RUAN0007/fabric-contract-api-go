@@ -3,7 +3,7 @@
 
 package main
 
-import "github.com/hyperledger/fabric-contract-api-go/contractapi"
+import "github.com/RUAN0007/fabric-contract-api-go/contractapi"
 
 // BasicAsset holds and ID and value
 type BasicAsset struct {

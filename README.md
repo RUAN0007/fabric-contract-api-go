@@ -1,6 +1,6 @@
 # Hyperledger Fabric Go Contract API
 
-[![](http://godoc.org/github.com/hyperledger/fabric-contract-api-go?status.svg)](http://godoc.org/github.com/hyperledger/fabric-contract-api-go)
+[![](http://godoc.org/github.com/RUAN0007/fabric-contract-api-go?status.svg)](http://godoc.org/github.com/RUAN0007/fabric-contract-api-go)
 
 This repository contains the packages for the implementation of the contract API for use in Go chaincode running on Fabric v2.1
 
@@ -19,7 +19,7 @@ There’s always plenty to do! Check the documentation on
 - [Hyperledger Code of Conduct](https://wiki.hyperledger.org/display/HYP/Hyperledger+Code+of+Conduct)
 
 ## Documentation
-Documentation for all packages within this repo can be found [here](http://godoc.org/github.com/hyperledger/fabric-contract-api-go)
+Documentation for all packages within this repo can be found [here](http://godoc.org/github.com/RUAN0007/fabric-contract-api-go)
 
 ## Tutorials
 Tutorials for how to create smart contracts using packages in this repo can be found [here](./tutorials)

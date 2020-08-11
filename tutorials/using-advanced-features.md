@@ -56,13 +56,13 @@ Likewise if the named function (e.g. `DoSomething`) errors the after function is
 
 > Note: In chaincode when a peer receives an error response anything written to the world state during that call is undone.
 
-To create your function to be called before each transaction create a new file called `transaction-context.go` in the same folder as you used for the [previous tutorial](./getting-started#housekeeping). The following code should be entered in this file. In here we will create our custom transaction context to store data retrieved in our before function for use in the called function. Custom transaction contexts must implement the [contractapi.SettableTransactionContextInterface](https://godoc.org/github.com/hyperledger/fabric-contract-api-go/contractapi#SettableTransactionContextInterface). Like when defining a contract, the easiest way to meet this interface is to embed a struct from the contractapi, this time the standard transaction context.
+To create your function to be called before each transaction create a new file called `transaction-context.go` in the same folder as you used for the [previous tutorial](./getting-started#housekeeping). The following code should be entered in this file. In here we will create our custom transaction context to store data retrieved in our before function for use in the called function. Custom transaction contexts must implement the [contractapi.SettableTransactionContextInterface](https://godoc.org/github.com/RUAN0007/fabric-contract-api-go/contractapi#SettableTransactionContextInterface). Like when defining a contract, the easiest way to meet this interface is to embed a struct from the contractapi, this time the standard transaction context.
 
 ```
 package main
 
 import (
-	"github.com/hyperledger/fabric-contract-api-go/contractapi"
+	"github.com/RUAN0007/fabric-contract-api-go/contractapi"
 )
 
 // CustomTransactionContext adds methods of storing and retrieving additional data for use
@@ -211,7 +211,7 @@ peer chaincode query -n mycc -c '{"Args":["BadFunction", "KEY_1"]}' -C myc
 Notice that the output differs from what was returned when you issued the same command before setting up the custom unknown transaction handler.
 
 ## Chaincode metadata
-Chaincode created using the contractapi package automatically has generated for it a system contract which provides metadata about the chaincode. This metadata describes the contracts that form the chaincode, describing their functions, the parameters those functions take, as well as function return values. The metadata produced follows this [schema](https://raw.githubusercontent.com/hyperledger/fabric-contract-api-go/master/metadata/schema/schema.json).
+Chaincode created using the contractapi package automatically has generated for it a system contract which provides metadata about the chaincode. This metadata describes the contracts that form the chaincode, describing their functions, the parameters those functions take, as well as function return values. The metadata produced follows this [schema](https://raw.githubusercontent.com/RUAN0007/fabric-contract-api-go/master/metadata/schema/schema.json).
 
 In Go the metadata is produced automatically for you using reflection, due to limitations of Go reflection the parameter names of functions in the metadata will not match the chaincode code but will instead use param0, param1, ..., paramN.
 

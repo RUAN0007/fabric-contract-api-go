@@ -9,8 +9,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hyperledger/fabric-contract-api-go/contractapi/utils"
-	"github.com/hyperledger/fabric-contract-api-go/serializer"
+	"github.com/RUAN0007/fabric-contract-api-go/contractapi/utils"
+	"github.com/RUAN0007/fabric-contract-api-go/serializer"
 	"github.com/stretchr/testify/assert"
 )
 

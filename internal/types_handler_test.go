@@ -10,8 +10,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hyperledger/fabric-contract-api-go/internal/types"
-	"github.com/hyperledger/fabric-contract-api-go/internal/utils"
+	"github.com/RUAN0007/fabric-contract-api-go/internal/types"
+	"github.com/RUAN0007/fabric-contract-api-go/internal/utils"
 	"github.com/stretchr/testify/assert"
 )
 

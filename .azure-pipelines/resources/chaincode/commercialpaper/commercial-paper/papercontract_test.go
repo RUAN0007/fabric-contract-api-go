@@ -7,7 +7,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/hyperledger/fabric-contract-api-go/contractapi"
+	"github.com/RUAN0007/fabric-contract-api-go/contractapi"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

@@ -26,13 +26,13 @@ go mod init github.com/hyperledger/fabric-samples/chaincode/contract-tutorial
 to setup go modules. You can then run
  
 ```
-go get -u github.com/hyperledger/fabric-contract-api-go
+go get -u github.com/RUAN0007/fabric-contract-api-go
 ```
 
 to get the latest release of fabric-contract-api-go for use in your chaincode.
 
 ## Declaring a contract
-The contractapi generates chaincode by taking one or more "contracts" that it bundles into a running chaincode. The first thing we will do here is declare a contract for use in our chaincode. This contract will be simple, handling the reading and writing of strings to and from the world state. All contracts for use in chaincode must implement the [contractapi.ContractInterface](https://godoc.org/github.com/hyperledger/fabric-contract-api-go/contractapi#ContractInterface). The easiest way to do this is to embed the `contractapi.Contract` struct within your own contract which will provide default functionality for meeting this interface.
+The contractapi generates chaincode by taking one or more "contracts" that it bundles into a running chaincode. The first thing we will do here is declare a contract for use in our chaincode. This contract will be simple, handling the reading and writing of strings to and from the world state. All contracts for use in chaincode must implement the [contractapi.ContractInterface](https://godoc.org/github.com/RUAN0007/fabric-contract-api-go/contractapi#ContractInterface). The easiest way to do this is to embed the `contractapi.Contract` struct within your own contract which will provide default functionality for meeting this interface.
 
 Begin your contract by creating a new file `simple-contract.go` within your `contract-tutorial` folder. Within this file create a struct called `SimpleContract` which embeds the `contractapi.Contract` struct. This will be our contract for managing data to and from the world state.
 
@@ -43,7 +43,7 @@ import (
     "errors"
     "fmt"
 
-    "github.com/hyperledger/fabric-contract-api-go/contractapi"
+    "github.com/RUAN0007/fabric-contract-api-go/contractapi"
 )
 
 // SimpleContract contract for handling writing and reading from the world state
@@ -72,7 +72,7 @@ By default all public functions of a struct are assumed to be callable via the f
     - It is taken as the first parameter
     - Either
         - It is either of type *contractapi.TransactionContext or a custom transaction context defined in the chaincode as to be used for the contract.
-        - It is an interface which the transaction context type in use for the contract meets e.g. [contractapi.TransactionContextInterface](https://godoc.org/github.com/hyperledger/fabric-contract-api-go/contractapi#TransactionContextInterface)
+        - It is an interface which the transaction context type in use for the contract meets e.g. [contractapi.TransactionContextInterface](https://godoc.org/github.com/RUAN0007/fabric-contract-api-go/contractapi#TransactionContextInterface)
 - Functions of contracts may only return zero, one or two values
     - If the function is defined to return zero values then a success response will be returned for all calls to that contract function
     - If the function is defined to return one value then that value may be any of the allowable types listed for parameters (except `interface{}`) or `error`.
@@ -158,7 +158,7 @@ import (
     "errors"
     "fmt"
 
-    "github.com/hyperledger/fabric-contract-api-go/contractapi"
+    "github.com/RUAN0007/fabric-contract-api-go/contractapi"
 )
 
 // SimpleContract contract for handling writing and reading from the world state
@@ -231,7 +231,7 @@ In the same folder as your `simple-contract.go` file, create a file called `main
 package main
 
 import (
-    "github.com/hyperledger/fabric-contract-api-go/contractapi"
+    "github.com/RUAN0007/fabric-contract-api-go/contractapi"
 )
 
 func main() {
@@ -264,7 +264,7 @@ Your `main.go` file should now look like this:
 package main
 
 import (
-    "github.com/hyperledger/fabric-contract-api-go/contractapi"
+    "github.com/RUAN0007/fabric-contract-api-go/contractapi"
 )
 
 func main() {

@@ -6,7 +6,7 @@ Before releasing ensure that you have:
 - Commit the updated changelog via PR with commit message "Preparing for release `<RELEASE_TAG>`"
 
 Releasing:
-- Go to: https://github.com/hyperledger/fabric-contract-api-go/releases
+- Go to: https://github.com/RUAN0007/fabric-contract-api-go/releases
 - Select "Draft a new release"
 - Enter the tag as `<RELEASE_TAG>`.
 - Give the release a title of "Release `<RELEASE_TAG>`"

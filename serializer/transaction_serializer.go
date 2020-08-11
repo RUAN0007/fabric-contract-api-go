@@ -6,7 +6,7 @@ package serializer
 import (
 	"reflect"
 
-	"github.com/hyperledger/fabric-contract-api-go/metadata"
+	"github.com/RUAN0007/fabric-contract-api-go/metadata"
 )
 
 // TransactionSerializer defines the functions a valid transaction serializer

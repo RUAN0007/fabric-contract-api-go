@@ -6,7 +6,7 @@ package ledgerapi
 import (
 	"fmt"
 
-	"github.com/hyperledger/fabric-contract-api-go/contractapi"
+	"github.com/RUAN0007/fabric-contract-api-go/contractapi"
 )
 
 // StateListInterface functions that a state list

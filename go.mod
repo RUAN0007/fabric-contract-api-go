@@ -1,4 +1,4 @@
-module github.com/hyperledger/fabric-contract-api-go
+module github.com/RUAN0007/fabric-contract-api-go
 
 go 1.13
 
@@ -14,3 +14,5 @@ require (
 	gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15 // indirect
 	gopkg.in/yaml.v2 v2.2.8 // indirect
 )
+
+replace github.com/hyperledger/fabric-chaincode-go v0.0.0-20200424173110-d7076418f212 => github.com/RUAN0007/fabric-chaincode-go v0.0.0-20200424173110-d7076418f212
